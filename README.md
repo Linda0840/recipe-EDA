@@ -4,7 +4,7 @@ Authors: Linda Zhang (xiz115@ucsd.edu), Kay Qu(kqu@ucsd.edu)
 ## About this project: 
 this is a paired EDA project which is originally assigned by UCSD's DSC80 offering during SP23. 
 we will be focusing on  cleaning, exploreing, and visualizing data scraped from [food.com](food.com).
-more information about the project's guidelines can be found [here](https://dsc80.com/project3/recipes-and-ratings/)
+more information about the project's guidelines can be found [here](https://dsc80.com/project3/recipes-and-ratings/).
 
 ## Introduction:
 
