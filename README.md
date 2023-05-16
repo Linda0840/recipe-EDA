@@ -6,7 +6,7 @@ this is a paired EDA project which is originally assigned by UCSD's DSC80 offeri
 we will be focusing on  cleaning, exploreing, and visualizing data scraped from [food.com](food.com). 
 More information about the project's guidelines can be found [here](https://dsc80.com/project3/recipes-and-ratings/).
 
-## Introduction:
+# Part I: Introduction:
 
 ### Research Question:
 
@@ -41,3 +41,5 @@ Below are the breif description of the raw data that we are going to perform cle
 | 'date'       | Date when the rating was posted   |
 | 'rating'     | rating, scaling from 1-5          |
 | 'review'     | user's review message about the recipe           |
+
+# Part II: Cleaning and EDA (Exploratory Data Analysis)
