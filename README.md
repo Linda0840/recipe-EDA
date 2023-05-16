@@ -18,16 +18,16 @@ the raw csv files can be found [here](https://drive.google.com/file/d/1kIbMz6jlh
 
 | Column           | Description                                          |
 |------------------|------------------------------------------------------|
-| 'name'           | Recipe name                                          |
-| 'id'             | Recipe ID                                            |
-| 'minutes'        | Minutes to prepare recipe                            |
-| 'contributor_id' | User ID who submitted this recipe                     |
-| 'submitted'      | Date recipe was submitted                            |
-| 'tags'           | Food.com tags for recipe                             |
+| 'name'           | Name of the recipe                                          |
+| 'id'             | Recipe's ID                                            |
+| 'minutes'        | Time (in minutues) to prepare recipe                            |
+| 'contributor_id' | recipe's contributor's ID                     |
+| 'submitted'      | Date when the recipe was submitted                            |
+| 'tags'           | Categorical tags for recipe                             |
 | 'nutrition'      | Nutrition information in the form [calories (#), total fat (PDV), sugar (PDV), sodium (PDV), protein (PDV), saturated fat (PDV), carbohydrates (PDV)]; PDV stands for “percentage of daily value” |
 | 'n_steps'        | Number of steps in recipe                            |
-| 'steps'          | Text for recipe steps, in order                       |
-| 'description'    | User-provided description                             |
+| 'steps'          | Text for 'n_steps', in order                       |
+| 'description'    | additional description provided by user                             |
 
 #### Ratings
 
