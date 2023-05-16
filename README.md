@@ -3,8 +3,8 @@ Authors: Linda Zhang (xiz115@ucsd.edu), Kay Qu(kqu@ucsd.edu)
 
 ## About this project: 
 this is a paired EDA project which is originally assigned by UCSD's DSC80 offering during SP23. 
-we will be focusing on  cleaning, exploreing, and visualizing data scraped from [food.com](food.com).
-More information about the project's guidelines can be found [here](https://dsc80.com/project3/recipes-and-ratings/) .
+we will be focusing on  cleaning, exploreing, and visualizing data scraped from [food.com](food.com). 
+More information about the project's guidelines can be found [here](https://dsc80.com/project3/recipes-and-ratings/).
 
 ## Introduction:
 
@@ -13,7 +13,7 @@ our data is derived from [food.com](https://www.food.com), originally scraped an
 
 Below are the breif description of the raw data that we are going to perform cleaning on: 
 
-#### Recipes
+#### Recipes (83782 rows, 12 columns)
 
 | Column           | Description                                          |
 |------------------|------------------------------------------------------|
@@ -28,7 +28,7 @@ Below are the breif description of the raw data that we are going to perform cle
 | 'steps'          | Description for 'n_steps', in order                       |
 | 'description'    | additional description provided by user                             |
 
-#### Ratings
+#### Ratings (731927 rows, 5 columns)
 
 | Column       | Description           |
 |--------------|-----------------------|
