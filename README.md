@@ -12,7 +12,7 @@ our data is derived from [food.com](https://www.food.com), originally scraped an
 
 the raw csv files can be found [here](https://drive.google.com/file/d/1kIbMz6jlhleiZ9_3QthmUnifoSds_2EI/view).
 
-| Component | Weight |
+| Column | Description |
 | --- | --- |
 | Provided an introduction to the dataset and the analyses  | 8 points |
 | Cleaned data | 8 points |
