@@ -8,6 +8,10 @@ More information about the project's guidelines can be found [here](https://dsc8
 
 ## Introduction:
 
+### Research Question:
+
+We would like to investigate the relationship between Time (in minutues) to prepare a recipe and whether it correlates with the average rating that it receives. We hypothesize that ... (TBD). We will be implementing permutation testing techniques to investigate this question. 
+
 ### About our data:
 our data is derived from [food.com](https://www.food.com), originally scraped and used by them. The raw csv files can be found [here](https://drive.google.com/file/d/1kIbMz6jlhleiZ9_3QthmUnifoSds_2EI/view).
 
