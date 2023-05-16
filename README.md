@@ -1,4 +1,4 @@
-# A Comprehensive Analysis on Recipes on food.com
+# A Preliminary EDA on Recipes from food.com
 Authors: Linda Zhang (xiz115@ucsd.edu), Kay Qu(kqu@ucsd.edu)
 
 ## About this project: 
