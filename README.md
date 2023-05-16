@@ -8,11 +8,9 @@ we will be focusing on  cleaning, exploreing, and visualizing data scraped from 
 ## Introduction:
 
 ### About our data:
-our data is derived from [food.com](https://www.food.com), originally scraped and used by them. 
+our data is derived from [food.com](https://www.food.com), originally scraped and used by them. The raw csv files can be found [here](https://drive.google.com/file/d/1kIbMz6jlhleiZ9_3QthmUnifoSds_2EI/view).
 
-the raw csv files can be found [here](https://drive.google.com/file/d/1kIbMz6jlhleiZ9_3QthmUnifoSds_2EI/view).
-
-
+Below are the breif description of the raw data that we are going to perform cleaning on: 
 
 #### Recipes
 
