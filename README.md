@@ -1,23 +1,23 @@
 # A Preliminary EDA on Recipes from food.com
 Authors: Linda Zhang (xiz115@ucsd.edu), Kay Qu(kqu@ucsd.edu)
 
-## About this project: 
+# About this project: 
 this is a paired EDA project which is originally assigned by UCSD's DSC80 offering during SP23. 
 we will be focusing on  cleaning, exploreing, and visualizing data scraped from [food.com](food.com). 
 More information about the project's guidelines can be found [here](https://dsc80.com/project3/recipes-and-ratings/).
 
 # Part I: Introduction:
 
-### Research Question:
+## Research Question:
 
 We would like to investigate the relationship between Time (in minutues) to prepare a recipe and whether it correlates with the average rating that it receives. We hypothesize that ... (TBD). We will be implementing permutation testing techniques to investigate this question. 
 
-### About our data:
+## About our data:
 our data is derived from [food.com](https://www.food.com), originally scraped and used by them. The raw csv files can be found [here](https://drive.google.com/file/d/1kIbMz6jlhleiZ9_3QthmUnifoSds_2EI/view).
 
 Below are the breif description of the raw data that we are going to perform cleaning on: 
 
-#### Recipes (83782 rows, 12 columns)
+### Recipes (83782 rows, 12 columns)
 
 | Column           | Description                                          |
 |------------------|------------------------------------------------------|
@@ -32,7 +32,7 @@ Below are the breif description of the raw data that we are going to perform cle
 | 'steps'          | Description for 'n_steps', in order                       |
 | 'description'    | additional description provided by user                             |
 
-#### Ratings (731927 rows, 5 columns)
+### Ratings (731927 rows, 5 columns)
 
 | Column       | Description           |
 |--------------|-----------------------|
