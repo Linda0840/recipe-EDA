@@ -43,3 +43,5 @@ Below are the breif description of the raw data that we are going to perform cle
 | 'review'     | user's review message about the recipe           |
 
 # Part II: Cleaning and EDA (Exploratory Data Analysis)
+
+We begin our data cleaning by merging the two dataframes: `raw_recipes` and `raw_iteractions`together. We perform a left merge on both dataframe's `recipe_id` (formatted as `id` in `raw_recipe`) so that the resulting `merged` dataframe will have all recipes from the `raw_recipes` dataframe with information from the `raw_interactions`. A more in-depth guide about merging can be found under [this Stack Overflow post](https://stackoverflow.com/questions/53645882/pandas-merging-101).
