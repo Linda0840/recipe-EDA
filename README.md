@@ -12,21 +12,17 @@ our data is derived from [food.com](https://www.food.com), originally scraped an
 
 the raw csv files can be found [here](https://drive.google.com/file/d/1kIbMz6jlhleiZ9_3QthmUnifoSds_2EI/view).
 
-| Column | Description |
-| --- | --- |
-| Provided an introduction to the dataset and the analyses  | 8 points |
-| Cleaned data | 8 points |
-| Performed univariate analyses  | 8 points |
-| Performed bivariate analyses and aggregation  | 8 points |
-| Addressed NMAR question | 4 points|
-| Performed permutation tests for missingness  | 8 points|
-| Interpreted missingness test results  | 8 points|
-| Selected relevant columns for a hypothesis or permutation test  | 4 points|
-| Explicitly stated a null hypothesis  | 4 points|
-| Explicitly stated an alternative hypothesis  | 4 points|
-| Performed a hypothesis or permutation test  | 8 points|
-| Used a valid test statistic  | 4 points|
-| Computed a p-value and made a decision  | 4 points|
-| Included all necessary components on the website | 20 points |
-| **Total** | **100 points** |
+| Column           | Description                                          |
+|------------------|------------------------------------------------------|
+| 'name'           | Recipe name                                          |
+| 'id'             | Recipe ID                                            |
+| 'minutes'        | Minutes to prepare recipe                            |
+| 'contributor_id' | User ID who submitted this recipe                     |
+| 'submitted'      | Date recipe was submitted                            |
+| 'tags'           | Food.com tags for recipe                             |
+| 'nutrition'      | Nutrition information in the form [calories (#), total fat (PDV), sugar (PDV), sodium (PDV), protein (PDV), saturated fat (PDV), carbohydrates (PDV)]; PDV stands for “percentage of daily value” |
+| 'n_steps'        | Number of steps in recipe                            |
+| 'steps'          | Text for recipe steps, in order                       |
+| 'description'    | User-provided description                             |
+
 
