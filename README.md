@@ -53,7 +53,7 @@ Next, since we are interested in finding trends for the average ratings amongst 
 ### recipes.head()
 
 The cleaned DataFrame is displayed below (columns have been separated due to webpage formatting concerns):
-<iframe src="assets/recipes_trincated_head.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/recipes_trincated_head.html" width=600 height=600 frameBorder=0></iframe>
 
 
 | name                              |     id |   minutes |   contributor_id | submitted   |
