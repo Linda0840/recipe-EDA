@@ -54,5 +54,5 @@ Next, since we are interested in finding trends for the average ratings amongst 
 
 The cleaned DataFrame is displayed below:
 
-<iframe src="assets/recipes_head.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/recipes_truncated_head.html" width=800 height=600 frameBorder=0></iframe>
 
