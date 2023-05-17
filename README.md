@@ -53,6 +53,7 @@ Next, since we are interested in finding trends for the average ratings amongst 
 ### recipes.head()
 
 The cleaned DataFrame is displayed below (columns have been separated due to webpage formatting concerns):
+<iframe src="assets/recipes_trincated_head.html" width=800 height=600 frameBorder=0></iframe>
 
 
 | name                              |     id |   minutes |   contributor_id | submitted   |
@@ -78,3 +79,4 @@ The cleaned DataFrame is displayed below (columns have been separated due to web
 | since there are already 411 re... | ['frozen broccoli cuts', 'crea... |               9 |        5 |
 | why a millionaire pound cake? ... | ['butter', 'sugar', 'eggs', 'a... |               7 |        5 |
 | ready, set, cook! special edit... | ['meatloaf mixture', 'unsmoked... |              13 |        5 |
+
