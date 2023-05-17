@@ -50,17 +50,32 @@ Then we replace all illegal ratings (e.g. 0) with `Nan`. This step is to prevent
 
 Next, since we are interested in finding trends for the average ratings amongst our recipes, we would like to also have a column with  `average_rating` data. We perform a left merge again, resulting in a dataframe called `recipes` with additional column that contains information about `rating`.
 
-### `recipes.head()`
+### recipes.head()
 
 The cleaned DataFrame is displayed below:
 
 <iframe src="assets/recipes_truncated_head.html" width=800 height=600 frameBorder=0></iframe>
 
-| name                              |     id |   minutes |   contributor_id | submitted   | tags                              | nutrition                         |   n_steps | steps                             | description                       | ingredients                       |   n_ingredients |   rating |
-|:----------------------------------|-------:|----------:|-----------------:|:------------|:----------------------------------|:----------------------------------|----------:|:----------------------------------|:----------------------------------|:----------------------------------|----------------:|---------:|
-| 1 brownies in the world    bes... | 333281 |        40 |           985201 | 2008-10-27  | ['60-minutes-or-less', 'time-t... | [138.4, 10.0, 50.0, 3.0, 3.0, ... |        10 | ['heat the oven to 350f and ar... | these are the most; chocolatey... | ['bittersweet chocolate', 'uns... |               9 |        4 |
-| 1 in canada chocolate chip coo... | 453467 |        45 |          1848091 | 2011-04-11  | ['60-minutes-or-less', 'time-t... | [595.1, 46.0, 211.0, 22.0, 13.... |        12 | ['pre-heat oven the 350 degree... | this is the recipe that we use... | ['white sugar', 'brown sugar',... |              11 |        5 |
-| 412 broccoli casserole            | 306168 |        40 |            50969 | 2008-05-30  | ['60-minutes-or-less', 'time-t... | [194.8, 20.0, 6.0, 32.0, 22.0,... |         6 | ['preheat oven to 350 degrees'... | since there are already 411 re... | ['frozen broccoli cuts', 'crea... |               9 |        5 |
-| millionaire pound cake            | 286009 |       120 |           461724 | 2008-02-12  | ['time-to-make', 'course', 'cu... | [878.3, 63.0, 326.0, 13.0, 20.... |         7 | ['freheat the oven to 300 degr... | why a millionaire pound cake? ... | ['butter', 'sugar', 'eggs', 'a... |               7 |        5 |
-| 2000 meatloaf                     | 475785 |        90 |          2202916 | 2012-03-06  | ['time-to-make', 'course', 'ma... | [267.0, 30.0, 12.0, 12.0, 29.0... |        17 | ['pan fry bacon , and set asid... | ready, set, cook! special edit... | ['meatloaf mixture', 'unsmoked... |              13 |        5 |
+| name                              |     id |   minutes |   contributor_id | submitted   |
+|:----------------------------------|-------:|----------:|-----------------:|:------------|
+| 1 brownies in the world bes...    | 333281 |        40 |           985201 | 2008-10-27  |
+| 1 in canada chocolate chip coo... | 453467 |        45 |          1848091 | 2011-04-11  |
+| 412 broccoli casserole            | 306168 |        40 |            50969 | 2008-05-30  |
+| millionaire pound cake            | 286009 |       120 |           461724 | 2008-02-12  |
+| 2000 meatloaf                     | 475785 |        90 |          2202916 | 2012-03-06  |
 
+| tags                              | nutrition                         |   n_steps | steps                             |
+|:----------------------------------|:----------------------------------|----------:|:----------------------------------|
+| ['60-minutes-or-less', 'time-t... | [138.4, 10.0, 50.0, 3.0, 3.0, ... |        10 | ['heat the oven to 350f and ar... |
+| ['60-minutes-or-less', 'time-t... | [595.1, 46.0, 211.0, 22.0, 13.... |        12 | ['pre-heat oven the 350 degree... |
+| ['60-minutes-or-less', 'time-t... | [194.8, 20.0, 6.0, 32.0, 22.0,... |         6 | ['preheat oven to 350 degrees'... |
+| ['time-to-make', 'course', 'cu... | [878.3, 63.0, 326.0, 13.0, 20.... |         7 | ['freheat the oven to 300 degr... |
+| ['time-to-make', 'course', 'ma... | [267.0, 30.0, 12.0, 12.0, 29.0... |        17 | ['pan fry bacon , and set asid... |
+
+| description                       | ingredients                       |   n_ingredients |   rating |
+|:----------------------------------|:----------------------------------|----------------:|---------:|
+| these are the most; chocolatey... | ['bittersweet chocolate', 'uns... |               9 |        4 |
+| this is the recipe that we use... | ['white sugar', 'brown sugar',... |              11 |        5 |
+| since there are already 411 re... | ['frozen broccoli cuts', 'crea... |               9 |        5 |
+| why a millionaire pound cake? ... | ['butter', 'sugar', 'eggs', 'a... |               7 |        5 |
+| ready, set, cook! special edit... | ['meatloaf mixture', 'unsmoked... |              13 |        5 |
