@@ -177,11 +177,19 @@ In this section, we will finally investigate the question we came up at the begi
 
 **_Do recipes with longer cooking time receive lower ratings?_**
 
+null hypothesis: average rating of q1 cooking time and q4 cooking time come from the same population
+
+
 The best way to answer this question, is still by performing a permutation testing. 
 
 We begin by setting up our null hypothesis:
 
-**_Do recipes with longer cooking time receive lower ratings?_**
+**_The difference of average rating between q4 and q1 (q4-q1) is the same  (difference=0)_**
+
+Then we state our alternative hypthesis:
+
+**_The difference of average rating between q4 and q1 (q4-q1) is the same  (difference=0)_**
+
 
 In order to investigate this question, we need to first statistically define our independent variable: `cooking time`.
 
