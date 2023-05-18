@@ -131,7 +131,9 @@ In real-life data, missingness is something that we will always encounter. We wo
 
 **NMAR** occurs when the missingness is dependent on the values themselves. We would have to use some domain knowledge to determine whether there is a possibility of NMAR. 
 
- Online environment is usually polarizing and people tend to express extreme opinions on things that they see. In terms of ratings, online users might be more inclined to leave a review when they either feel like the recipe is exceptionally good (perhaps giving it as 5/5), but there will also be folks who would leave a (1/5) if the recipe does not suit their taste. Therefore, the extremeness of the rating could be correlated with missingness, with missning data amongst ratings with a more moderate score (e.g. 3). 
+ Online environment is usually polarizing and people tend to express extreme opinions on things that they see. In terms of ratings, online users might be more inclined to leave a review when they either feel like the recipe is exceptionally good (perhaps giving it as 5/5), but there will also be folks who would leave a (1/5) if the recipe does not suit their taste. 
+ 
+ Therefore, the extremeness of the ratings themselves could be correlated with their missingness, with more missing data amongst ratings with a more moderate score (e.g. 3). 
 
 
 _(Note: more information about types of missingness can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK493614/))_
@@ -203,6 +205,6 @@ Then we state our alternative hypthesis:
 The best way to answer this question, is still by performing a permutation testing. 
 
 <iframe src="assets/Part_3.html" width=600 height=550 frameBorder=0></iframe>
-Part_3.html
+
 
 
