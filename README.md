@@ -132,6 +132,8 @@ We want to determine whether the missingness is:
 - **NMAR (Not Missing At Random),** or
 - **MAR (Missing At Random).**
 
+## Missingness of minutes
+
 We first performed a __permutation testing__ to determine whether missingness of `rating` was __dependent__ on minutes.
 
 <iframe src="assets/Part_2_Fail_To_Reject.html" width=600 height=550 frameBorder=0></iframe>
@@ -143,6 +145,8 @@ From the graph, we can see that there are some visible difference in the distrib
 
 The test result yielded a p-value of __`0.037`__, given that we use __α = 0.01__ as our significance level, we __fail to reject the null hypothesis__, which is a sign that the missingness is potentially due to random chance (belong to the same population), hence we cannot conclude that the missingness of `rating` is dependent on `time`. 
 
+## Missingness of n_ingredients
+
 Then, we tried to investigate the realtionship between missingness in `rating` and `n_ingredients`. We also hypothesized that the missingness is dependent on `n_ingredients`, with similar reasoning mentioned above. 
 
 <iframe src="assets/Part_2_Reject_Ingredients.html" width=600 height=550 frameBorder=0></iframe>
@@ -153,6 +157,7 @@ From the graph, we can still see that there are some visible difference in the d
 
 The test result yielded a p-value of __`0.001`__, and given that we still use __α = 0.01__ as our significance level, we __reject the null hypothesis__, which means that the missingness is likely to be associated with `n_ingredients`.
 
+## Missingness of n_steps
 
 Additionally, we attempted to visualize the difference in missingness among different `n_steps`:
 <iframe src="assets/Part_2_Steps.html" width=600 height=550 frameBorder=0></iframe>
