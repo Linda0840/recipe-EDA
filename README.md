@@ -138,7 +138,7 @@ We first performed a __permutation testing__ to determine whether missingness of
 
 <iframe src="assets/Part_2_Fail_To_Reject.html" width=600 height=550 frameBorder=0></iframe>
 
-From the graph, we can see that there are some visible difference in the distribution of minutes when comparing missing and non-missing data. We performed a permutation testing to determine if these two groups could be from the same population: 
+From the graph, we can see that there are some visible difference in the distribution of minutes when comparing missing and non-missing data. We performed a permutation testing by using __difference in means__ to determine if these two groups could be from the same population: 
 
 <iframe src="assets/Part_2_Minutes.html" width=600 height=550 frameBorder=0></iframe>
 
@@ -151,7 +151,7 @@ Then, we tried to investigate the realtionship between missingness in `rating` a
 
 <iframe src="assets/Part_2_Reject_Ingredients.html" width=600 height=550 frameBorder=0></iframe>
 
-From the graph, we can still see that there are some visible difference in the distribution of minutes when comparing missing and non-missing data. We performed a permutation testing to determine if these two groups could be from the same population: 
+From the graph, we can still see that there are some visible difference in the distribution of minutes when comparing missing and non-missing data. We performed a permutation testing  by using __difference in means__ to determine if these two groups could be from the same population: 
 
 <iframe src="assets/Part_2_Ingredients.html" width=600 height=550 frameBorder=0></iframe>
 
@@ -163,7 +163,7 @@ Additionally, we attempted to visualize the difference in missingness among diff
 
 <iframe src="assets/Part_2_Reject_Steps.html" width=600 height=550 frameBorder=0></iframe>
 
-Then we performed a permutation testing to determine if these two groups could be from the same population: 
+Then we performed a permutation testing by using __difference in means__ to determine if these two groups could be from the same population: 
 
 <iframe src="assets/Part_2_Steps.html" width=600 height=550 frameBorder=0></iframe>
 
