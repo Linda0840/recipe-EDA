@@ -95,7 +95,7 @@ From the chart above, we can observe that more than 64% of the recipes can be ma
 
 From the chart above, we can see that the average ratings of recipes are overall positive, with around (TBD) percent of values ranging at a solid 5/5. The rest of the ratings are distributed at around 3-4, and there are very few ratings that are below 2.
 
-### Bivariate analysis
+### Bivariate analysis <a id="biv-analysis"></a>
 
 In this section, we will be exploring the relationship between the two variables we are interested in: `minutes` and `rating` (average rating). 
 
@@ -179,21 +179,16 @@ In this section, we will finally investigate the question we came up at the begi
 
 In order to investigate this question, we need to first statistically define our independent variable: `cooking time`.
 
-We used a quartiled approach and splitted our data in to four quadrants by `time` . We define our first quartile to be group of **short cooking time** and fourth quartile to be group of **long cooking time**.
-
-null hypothesis: average rating of q1 cooking time and q4 cooking time come from the same population
-
-
+We used a quartiled approach and splitted our data in to four quadrants by `time` . We define our first quartile to be group of **short cooking time** and fourth quartile to be group of **long cooking time**. We chose this partitioning condition because from the previous figure on the Bivariate Distribution [Jump to Section 1](#biv_analysis)
 
 
 We begin by setting up our null hypothesis:
 
-**_The difference of average rating between q4 and q1 (q4-q1) is the same  (difference=0)_**
+**The difference of average rating between q4 and q1 (q4-q1) is the same  (difference=0)**
 
 Then we state our alternative hypthesis:
 
-**_The difference of average rating between q4 and q1 (q4-q1) is the same  (difference=0)_**
-
+**The difference of average rating between q4 and q1 (q4-q1) is positive  (difference>0)**
 
 
 The best way to answer this question, is still by performing a permutation testing. 
