@@ -124,7 +124,7 @@ For the pivot table above, we attempted to visualize `n_steps`  and `n_ingredien
 
 # Part III: Assessment of Missingness
 
-In real-life data, missingness is something that we will always encounter. We would like to investigate if there is a relationship between rating and time, in minutes. We hypothesize that the missingness of rating is **dependent** on time, in minutes. Which means that we believe the missingness is __NMAR__. For example, a potential reason why missingness in ratings could be attributed to time, is that the longer the recipe requires, the less likely people are going to attempt cooking them, and therefore the lack of rating. 
+In real-life data, missingness is something that we will always encounter. We would like to investigate if there is a relationship between `rating` and `time`, in minutes. We hypothesize that the missingness of `rating` is **dependent** on `time`, in minutes. Which means that we believe the missingness is __NMAR__. For example, a potential reason why missingness in ratings could be attributed to `time`, is that the longer the recipe requires, the less likely people are going to attempt cooking them, and therefore the appearace of `NaN`s in `rating`. 
 
 _(Note: more information about types of missingness can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK493614/))_
 
@@ -134,10 +134,18 @@ We want to determine whether the missingness is:
 
 We first performed a __permutation testing__ to determine whether missingness of `rating` was __dependent__ on minutes.
 
-<iframe src="assets/Part_2_Minutes.html" width=500 height=550 frameBorder=0></iframe>
+<iframe src="assets/Part_2_Minutes.html" width=600 height=550 frameBorder=0></iframe>
 
 
-The test result yielded a p-value of `0.037`, given that we use α = 0.01 as our significance level, we __fail to reject the null hypothesis__, which is a sign that the missingness is potentially due to random chance, hence we cannot conclude that the missingness of `rating` is dependent on `time`. 
+The test result yielded a p-value of __`0.037`__, given that we use __α = 0.01__ as our significance level, we __fail to reject the null hypothesis__, which is a sign that the missingness is potentially due to random chance, hence we cannot conclude that the missingness of `rating` is dependent on `time`. 
 
+Then, we tried to investigate the realtionship between missingness in `rating` and `n_ingredients`. We also hypothesized that the missingness is dependent on `n_ingredients`, with similar reasoning mentioned above. 
+
+<iframe src="assets/Part_2_Ingredients.html" width=600 height=550 frameBorder=0></iframe>
+
+The test result yielded a p-value of __`0.001`__, and given that we still use __α = 0.01__ as our significance level, we __reject the null hypothesis__, which means that the missingness is likely to be associated with `n_ingredients`.
+
+
+# Part IV: Hypothesis Testing
 
 
