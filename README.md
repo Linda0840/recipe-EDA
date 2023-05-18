@@ -116,3 +116,6 @@ From the chart above, we can observe that there seems to be some correlation bet
 |        12 | 4.61807 | 4.60683 | 4.6429  | 4.59205 | 4.60362 | 4.61306 | 4.67451 | 4.59529 | 4.5873  | 4.60679 |
 |        13 | 4.7376  | 4.63187 | 4.60628 | 4.64955 | 4.59426 | 4.62241 | 4.60985 | 4.62847 | 4.65895 | 4.57838 |
 |        14 | 4.67968 | 4.57864 | 4.5237  | 4.61213 | 4.64867 | 4.543   | 4.62148 | 4.58855 | 4.62266 | 4.57949 |
+
+
+For the pivot table above, we attempted to visualize `n_steps`  and `n_ingredients`. 
