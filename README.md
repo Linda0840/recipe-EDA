@@ -126,5 +126,7 @@ In real-life data, missingness is something that we will always encounter.
 
 In our example, we want to determine whether the missingness is: 
 - **NMAR (Not Missing At Random)**
+
 or
+
 - **MAR (Missing At Random)**
