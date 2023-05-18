@@ -179,7 +179,7 @@ In this section, we will finally investigate the question we came up at the begi
 
 In order to investigate this question, we need to first statistically define our independent variable: `cooking time`.
 
-We used a quartiled approach and splitted our data in to four quadrants by `time` . We define our first quartile to be group of **short cooking time** and fourth quartile to be group of **long cooking time**. We chose this partitioning condition because from the previous figure on the Bivariate Distribution [Jump to Section 1](#bivariate-analysis-)
+We used a quartiled approach and splitted our data in to four quadrants by `time` . We define our first quartile to be group of **short cooking time** and fourth quartile to be group of **long cooking time**. We chose this partitioning condition because from the previous figure on the [Bivariate Distribution](#bivariate-analysis-)
 
 
 We begin by setting up our null hypothesis:
