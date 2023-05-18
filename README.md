@@ -202,7 +202,7 @@ Then we state our alternative hypthesis:
 **The difference of average rating between q4 and q1 (q4-q1) is positive  (difference>0)**
 
 
-The best way to answer this question, is still by performing a permutation testing. 
+The best way to answer this question, is still by performing a permutation testing. We will be using signed difference in means of averages as test statistic. We use signed difference since our question of interest is one-sided, so we need statistics that inform directions. 
 
 <iframe src="assets/Part_3.html" width=600 height=550 frameBorder=0></iframe>
 
