@@ -173,4 +173,10 @@ The test result yielded a p-value of __`0.00`__, and given that we still use __Î
 
 # Part IV: Hypothesis Testing
 
+In this section, we will finally investigate the question we came up at the beginning of this report: 
+
+**_Does longer cooking time lead to lower recipe ratings?_**
+
+
+
 
