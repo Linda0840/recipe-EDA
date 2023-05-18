@@ -188,11 +188,11 @@ We used a quartiled approach and splitted our data in to four quadrants by `time
 
 Now, we are ready to begin by setting up our null hypothesis (no change):
 
-- - **The difference of average rating between q1 and q4 (q1-q4) is the same  (difference = 0)**
+- **The difference of average rating between q1 and q4 (q1-q4) is the same  (difference = 0)**
 
 Then we state our alternative hypthesis:
 
-**The difference of average rating between q1 and q4 (q1-q4) is positive  (difference > 0)**
+- **The difference of average rating between q1 and q4 (q1-q4) is positive  (difference > 0)**
 
 ## Performing the Test
 
