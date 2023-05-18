@@ -147,15 +147,21 @@ Then, we tried to investigate the realtionship between missingness in `rating` a
 
 <iframe src="assets/Part_2_Reject_Ingredients.html" width=600 height=550 frameBorder=0></iframe>
 
+From the graph, we can still see that there are some visible difference in the distribution of minutes when comparing missing and non-missing data. We performed a permutation testing to determine if these two groups could be from the same population: 
+
 <iframe src="assets/Part_2_Ingredients.html" width=600 height=550 frameBorder=0></iframe>
 
 The test result yielded a p-value of __`0.001`__, and given that we still use __α = 0.01__ as our significance level, we __reject the null hypothesis__, which means that the missingness is likely to be associated with `n_ingredients`.
 
 
-We first attempted to visualize the difference in missingness among different 
-
+Additionally, we attempted to visualize the difference in missingness among different `n_steps`:
 <iframe src="assets/Part_2_Steps.html" width=600 height=550 frameBorder=0></iframe>
+
+Then we performed a permutation testing to determine if these two groups could be from the same population: 
+
 <iframe src="assets/Part_2_Reject_Steps.html" width=600 height=550 frameBorder=0></iframe>
+
+The test result yielded a p-value of __`0.00`__, and given that we still use __α = 0.01__ as our significance level, we __reject the null hypothesis__, which means that the missingness is likely to be associated with `n_steps`.
 
 
 
