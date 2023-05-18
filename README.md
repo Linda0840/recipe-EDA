@@ -122,11 +122,11 @@ For the pivot table above, we attempted to visualize `n_steps`  and `n_ingredien
 
 # Part III: Assessment of Missingness
 
-In real-life data, missingness is something that we will always encounter. 
+In real-life data, missingness is something that we will always encounter. We would like to investigate if there is a relationship between rating and time, in minutes. We hypothesize that the missingness of rating is **dependent** on time, in minutes.
 
-In our example, we want to determine whether the missingness is: 
-- **NMAR (Not Missing At Random)**
+We want to determine whether the missingness is: 
+- **NMAR (Not Missing At Random),** or
+- **MAR (Missing At Random).**
 
-or
 
-- **MAR (Missing At Random)**
+
