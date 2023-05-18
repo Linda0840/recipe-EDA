@@ -175,7 +175,17 @@ The test result yielded a p-value of __`0.00`__, and given that we still use __Î
 
 In this section, we will finally investigate the question we came up at the beginning of this report: 
 
-**Do recipes with longer cooking time receive lower ratings?_**
+**_Do recipes with longer cooking time receive lower ratings?_**
+
+The best way to answer this question, is still by performing a permutation testing. 
+
+We begin by setting up our null hypothesis:
+
+**_Do recipes with longer cooking time receive lower ratings?_**
+
+In order to investigate this question, we need to first statistically define our independent variable: `cooking time`.
+
+We used a quartiled approach and splitted our data in to four quadrants by `time` . We define our first quartile to be group of **short cooking time** and fourth quartile to be group of **long cooking time**.
 
 
 
