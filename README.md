@@ -195,16 +195,18 @@ We used a quartiled approach and splitted our data in to four quadrants by `time
 
 Now, we are ready to begin by setting up our null hypothesis (no change):
 
-**The difference of average rating between q4 and q1 (q4-q1) is the same  (difference=0)**
+**The difference of average rating between q4 and q1 (q1-q4) is the same  (difference=0)**
 
 Then we state our alternative hypthesis:
 
-**The difference of average rating between q4 and q1 (q4-q1) is positive  (difference>0)**
+**The difference of average rating between q1 and q4 (q1-q4) is positive  (difference>0)**
 
 
-The best way to answer this question, is still by performing a permutation testing. We will be using signed difference in means of averages as test statistic. We use signed difference since our question of interest is one-sided, so we need statistics that inform directions. 
+The best way to answer this question, is still by performing a permutation testing. We will be using **signed difference in means of averages** as test statistic. We use **signed** difference since our question of interest is one-sided, so we need statistics that inform directions. 
 
 <iframe src="assets/Part_3.html" width=600 height=550 frameBorder=0></iframe>
 
 
+The test result yielded a p-value of __`0.00`__, and given that we still use __α = 0.01__ as our significance level, we __reject the null hypothesis__, which means that recipes with lower cooking time could be more likely to have a higher rating compared to those with longer cooking time. 
 
+However, it is important to note that we **cannot** guarantee for sure that our conclusion is correct, since we are performing a hypothesis testing. We can only conclude that it is **likely** that the recipes with lower cooking time have higher ratings.
