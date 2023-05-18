@@ -134,7 +134,6 @@ We want to determine whether the missingness is:
 
 We first performed a __permutation testing__ to determine whether missingness of `rating` was __dependent__ on minutes.
 
-<iframe src="assets/Part_2_Ingredients.html" width=600 height=550 frameBorder=0></iframe>
 
 <iframe src="assets/Part_2_Minutes.html" width=600 height=550 frameBorder=0></iframe>
 
