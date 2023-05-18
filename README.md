@@ -124,7 +124,7 @@ For the pivot table above, we attempted to visualize `n_steps`  and `n_ingredien
 
 In real-life data, missingness is something that we will always encounter. 
 
-In our example, we want to determine whether the missingness is:
-**NMAR (Not Missing At Random)**
+In our example, we want to determine whether the missingness is: 
+- **NMAR (Not Missing At Random)**
 or
-**MAR (Missing At Random)**
+- **MAR (Missing At Random)**
