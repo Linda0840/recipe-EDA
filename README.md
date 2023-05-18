@@ -105,6 +105,9 @@ From the chart above, we can observe that there seems to be some correlation bet
 
 ### Interesting Aggregates
 
+<iframe src="assets/Part_1_Pivot.html" width=500 height=550 frameBorder=0></iframe>
+
+
 
 |   n_steps |       5 |       6 |       7 |       8 |       9 |      10 |      11 |      12 |      13 |      14 |
 |----------:|--------:|--------:|--------:|--------:|--------:|--------:|--------:|--------:|--------:|--------:|
