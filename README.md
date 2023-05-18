@@ -118,4 +118,4 @@ From the chart above, we can observe that there seems to be some correlation bet
 |        14 | 4.67968 | 4.57864 | 4.5237  | 4.61213 | 4.64867 | 4.543   | 4.62148 | 4.58855 | 4.62266 | 4.57949 |
 
 
-For the pivot table above, we attempted to visualize `n_steps`  and `n_ingredients`. 
+For the pivot table above, we attempted to visualize `n_steps`  and `n_ingredients`, and aggregating their average ratings. The result does not show an obvious trend, but we can prelimanarily hypothesize that as number of steps and number of ingredients increase, the average rating for the recipe will decrease. This will not be the main focus of this EDA, but is a potential future area of interest. 
