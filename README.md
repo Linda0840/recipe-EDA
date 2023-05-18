@@ -177,10 +177,14 @@ In this section, we will finally investigate the question we came up at the begi
 
 **_Do recipes with longer cooking time receive lower ratings?_**
 
+In order to investigate this question, we need to first statistically define our independent variable: `cooking time`.
+
+We used a quartiled approach and splitted our data in to four quadrants by `time` . We define our first quartile to be group of **short cooking time** and fourth quartile to be group of **long cooking time**.
+
 null hypothesis: average rating of q1 cooking time and q4 cooking time come from the same population
 
 
-The best way to answer this question, is still by performing a permutation testing. 
+
 
 We begin by setting up our null hypothesis:
 
@@ -191,10 +195,7 @@ Then we state our alternative hypthesis:
 **_The difference of average rating between q4 and q1 (q4-q1) is the same  (difference=0)_**
 
 
-In order to investigate this question, we need to first statistically define our independent variable: `cooking time`.
 
-We used a quartiled approach and splitted our data in to four quadrants by `time` . We define our first quartile to be group of **short cooking time** and fourth quartile to be group of **long cooking time**.
-
-
+The best way to answer this question, is still by performing a permutation testing. 
 
 
