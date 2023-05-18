@@ -195,4 +195,7 @@ Then we state our alternative hypthesis:
 
 The best way to answer this question, is still by performing a permutation testing. 
 
+<iframe src="assets/Part_3.html" width=600 height=550 frameBorder=0></iframe>
+Part_3.html
+
 
