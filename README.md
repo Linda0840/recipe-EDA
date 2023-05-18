@@ -83,3 +83,6 @@ The cleaned DataFrame is displayed below (columns have been separated due to web
 
 ### Univariate Analysis
 
+<iframe src="assets/Part_1_Histogram_of_Minutes.html" width=600 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/Part_1_Histogram_of_Average_Rating.html" width=600 height=600 frameBorder=0></iframe>
