@@ -129,14 +129,18 @@ For the pivot table above, we attempted to visualize `n_steps`  and `n_ingredien
 
 In real-life data, missingness is something that we will always encounter. We would like to investigate if there is a relationship between `rating` and `time`, in minutes. Through cleaning and examining data, we obsereved a few columns with missing values, such as `rating`, `review`, `description`. One potential column where missingness of type NMAR could occur is in the `rating` column. 
 
-**NMAR** occurs whenn the missingness is dependent on the values themselves. Online environment is usually polarizing and people tend to express extreme opinions on things that they see. In terms of ratings, online users might be more inclined to leave a review when they either feel like the recipe is exceptionally good (perhaps giving it as 5/5), but there will also be folks who would leave a (1/5) if the recipe does not suit their taste. Therefore, the extremeness of the rating could be correlated with missingness, with missning data amongst ratings with a more moderate score (e.g. 3). 
+**NMAR** occurs when the missingness is dependent on the values themselves. We would have to use some domain knowledge to determine whether there is a possibility of NMAR. 
+
+ Online environment is usually polarizing and people tend to express extreme opinions on things that they see. In terms of ratings, online users might be more inclined to leave a review when they either feel like the recipe is exceptionally good (perhaps giving it as 5/5), but there will also be folks who would leave a (1/5) if the recipe does not suit their taste. Therefore, the extremeness of the rating could be correlated with missingness, with missning data amongst ratings with a more moderate score (e.g. 3). 
 
 
 _(Note: more information about types of missingness can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK493614/))_
 
 We want to determine whether the missingness is: 
-- **NMAR (Not Missing At Random),** or
-- **MAR (Missing At Random).**
+- **MCAR (Missing Completely At Random),** or
+- **MAR (Missing At Random).**,
+
+and this can be achieve by performing column dependency tests.
 
 ## Missingness of minutes
 
