@@ -83,6 +83,11 @@ The cleaned DataFrame is displayed below (columns have been separated due to web
 
 ### Univariate Analysis
 
+In this section, we performed basic visualization on columns that we are interested in : `minutes` and `rating` (average rating).
+
 <iframe src="assets/Part_1_Histogram_of_Minutes.html" width=400 height=400 frameBorder=0></iframe>
 
+From this chart, we can observe that more than 64% of the recipes can be made in under 50 minutes, and almost 90% of the recipes can be prepared in under 100 minutes.
+
 <iframe src="assets/Part_1_Histogram_of_Average_Rating.html" width=400 height=400 frameBorder=0></iframe>
+
