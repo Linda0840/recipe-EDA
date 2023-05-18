@@ -48,10 +48,6 @@ Below are the breif description of the raw data that we are going to perform cle
 
 We begin our data cleaning by merging the two dataframes: `raw_recipes` and `raw_iteractions`together. We perform a left merge on both dataframe's `recipe_id` (formatted as `id` in `raw_recipe`) so that the resulting `merged` dataframe will have all recipes from the `raw_recipes` dataframe with information from the `raw_interactions`. 
 
-'''
-df = raw_recipes.merge(raw_interactions, left_on = 'id', right_on = 'recipe_id', how = 'left')
-'''
-
 A more in-depth guide about merging can be found under [this Stack Overflow post](https://stackoverflow.com/questions/53645882/pandas-merging-101).
 
 Then we replace all illegal ratings (e.g. 0) with `Nan`. This step is to prevent numerical missing data from affecting certain aggregation methods, such as when looking for average rating using `.mean()`. Since aggregation methods ignores `NaN` as default, we can safely proceed to the next step. 
@@ -141,7 +137,7 @@ We first performed a __permutation testing__ to determine whether missingness of
 <iframe src="assets/Part_2_Minutes.html" width=500 height=550 frameBorder=0></iframe>
 
 
-The test result yielded a p-value of `0.037`, which is a sign that the missingness is potentially due to random chance, hence we cannot conclude that the missingness of `rating` is dependent on `time`. 
+The test result yielded a p-value of `0.037`, given that we use α = 0.01 as our significance level, we __fail to reject the null hypothesis__, which is a sign that the missingness is potentially due to random chance, hence we cannot conclude that the missingness of `rating` is dependent on `time`. 
 
 
 
