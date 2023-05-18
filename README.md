@@ -138,12 +138,10 @@ We first performed a __permutation testing__ to determine whether missingness of
 
 <iframe src="assets/Part_2_Minutes.html" width=600 height=550 frameBorder=0></iframe>
 
-<iframe src="assets/Part_2_Reject_Steps.html" width=600 height=550 frameBorder=0></iframe>
-
 We first attempted to visualize the difference in missingness among different 
 
 <iframe src="assets/Part_2_Steps.html" width=600 height=550 frameBorder=0></iframe>
-
+<iframe src="assets/Part_2_Reject_Steps.html" width=600 height=550 frameBorder=0></iframe>
 
 The test result yielded a p-value of __`0.037`__, given that we use __α = 0.01__ as our significance level, we __fail to reject the null hypothesis__, which is a sign that the missingness is potentially due to random chance, hence we cannot conclude that the missingness of `rating` is dependent on `time`. 
 
