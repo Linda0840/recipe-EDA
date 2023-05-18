@@ -83,7 +83,7 @@ The cleaned DataFrame is displayed below (columns have been separated due to web
 
 ### Univariate Analysis
 
-In this section, we performed basic visualization on columns that we are interested in : `minutes` and `rating` (average rating).
+In this section, we performed basic individual visualization on columns that we are interested in : `minutes` and `rating` (average rating).
 
 <iframe src="assets/Part_1_Histogram_of_Minutes.html" width=550 height=550 frameBorder=0></iframe>
 
@@ -91,4 +91,10 @@ From the chart above, we can observe that more than 64% of the recipes can be ma
 
 <iframe src="assets/Part_1_Histogram_of_Average_Rating.html" width=550 height=550 frameBorder=0></iframe>
 
-From the chart above, we can see that the average ratings of recipes are overall positive, with around (TBD) percent of values ranging at a solid 5/5. The rest of the ratings are distributed at around 3-4, and there are very few  
+From the chart above, we can see that the average ratings of recipes are overall positive, with around (TBD) percent of values ranging at a solid 5/5. The rest of the ratings are distributed at around 3-4, and there are very few ratings that are below 2.
+
+### Bivariate analysis
+
+In this section, we will be exploring the relationship between the two variables we are interested in: `minutes` and `rating` (average rating). 
+
+<iframe src="assets/Part_1_Scatter_Plot.html" width=550 height=550 frameBorder=0></iframe>
