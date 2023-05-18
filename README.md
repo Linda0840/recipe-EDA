@@ -12,8 +12,10 @@ More information about the project's guidelines can be found [here](https://dsc8
 
 We would like to investigate the relationship between Time (in minutues) to prepare a recipe and whether it correlates with the average rating that it receives. We hypothesize that the longer time a recipe requires, the less rating it will receive. We will be implementing hypothesis testing techniques to investigate this question. 
 
+This is a question worth investigating because through analyzing the relationship between cooking time and ratings, we can potentially look into whether this trend (or the lack thereof) is related to years when the users provided their ratings. We can then preform meta-analysis on whether users are becoming less fond of lengthy recipes as time passes. This can be a future research topic that is worth investigating. 
+
 ## About our data
-our data is derived from [food.com](https://www.food.com), originally scraped and used by them. The raw csv files can be found [here](https://drive.google.com/file/d/1kIbMz6jlhleiZ9_3QthmUnifoSds_2EI/view).
+Our data is derived from [food.com](https://www.food.com), originally scraped and used by them. The raw csv files can be found [here](https://drive.google.com/file/d/1kIbMz6jlhleiZ9_3QthmUnifoSds_2EI/view).
 
 Below are the breif description of the raw data that we are going to perform cleaning on: 
 
@@ -44,7 +46,7 @@ Below are the breif description of the raw data that we are going to perform cle
 
 # Part II: Cleaning and EDA (Exploratory Data Analysis)
 
-### Data Cleaning
+## Data Cleaning
 
 We begin our data cleaning by merging the two dataframes: `raw_recipes` and `raw_iteractions`together. We perform a left merge on both dataframe's `recipe_id` (formatted as `id` in `raw_recipe`) so that the resulting `merged` dataframe will have all recipes from the `raw_recipes` dataframe with information from the `raw_interactions`. 
 
@@ -83,7 +85,7 @@ The cleaned DataFrame is displayed below (columns have been separated due to web
 | ready, set, cook! special edit... | ['meatloaf mixture', 'unsmoked... |              13 |        5 |
 
 
-### Univariate Analysis
+## Univariate Analysis
 
 In this section, we performed basic individual visualization on columns that we are interested in : `minutes` and `rating` (average rating).
 
@@ -95,7 +97,7 @@ From the chart above, we can observe that more than 64% of the `recipes` can be 
 
 From the chart above, we can see that the average `ratings` of `recipes` are overall positive, with around (TBD) percent of values ranging at a solid 5/5. The rest of the `ratings` are distributed at around 3-4, and there are very few ratings that are below 2.
 
-### Bivariate analysis <a id="biv-analysis"></a>
+## Bivariate analysis <a id="biv-analysis"></a>
 
 In this section, we will be exploring the relationship between the two variables we are interested in: `minutes` and `rating` (average rating). 
 
@@ -103,7 +105,7 @@ In this section, we will be exploring the relationship between the two variables
 
 From the chart above, we can observe that there seems to be some correlation between `minutes` and `rating`. This observation is based on the fact that we see more ratings on the lower end of the spectrum when the recipe's time in minutes is shorter. We would like to further investigate if that is truly the case. 
 
-### Interesting Aggregates
+## Interesting Aggregates
 
 <iframe src="assets/Part_1_Pivot.html" width=500 height=550 frameBorder=0></iframe>
 
@@ -174,6 +176,8 @@ The test result yielded a p-value of __`0.00`__, and given that we still use __Î
 
 # Part IV: Hypothesis Testing
 
+## Setting up Relevant Hypothesis
+
 In this section, we will finally investigate the question we came up at the beginning of this report: 
 
 **_Do recipes with longer cooking time receive lower ratings?_**
@@ -190,6 +194,7 @@ Then we state our alternative hypthesis:
 
 **The difference of average rating between q1 and q4 (q1-q4) is positive  (difference > 0)**
 
+## Performing the Test
 
 The best way to answer this question, is still by performing a permutation testing. We will be using **signed difference in means of averages** as test statistic. We use **signed** difference since our question of interest is one-sided ï¼ˆwhether observed is larger than expected, so we need statistics that inform directions. 
 
