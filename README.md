@@ -124,7 +124,7 @@ For the pivot table above, we attempted to visualize `n_steps`  and `n_ingredien
 
 In real-life data, missingness is something that we will always encounter. We would like to investigate if there is a relationship between rating and time, in minutes. We hypothesize that the missingness of rating is **dependent** on time, in minutes. Which means that we believe the missingness is NMAR. 
 
-(Note: more information about types of missingness can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK493614/))
+_(Note: more information about types of missingness can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK493614/))_
 
 We want to determine whether the missingness is: 
 - **NMAR (Not Missing At Random),** or
