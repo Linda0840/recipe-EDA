@@ -44,16 +44,16 @@ Below are the breif description of the raw data that we are going to perform cle
 
 # Part II: Cleaning and EDA (Exploratory Data Analysis)
 
+### Data Cleaning
+
 We begin our data cleaning by merging the two dataframes: `raw_recipes` and `raw_iteractions`together. We perform a left merge on both dataframe's `recipe_id` (formatted as `id` in `raw_recipe`) so that the resulting `merged` dataframe will have all recipes from the `raw_recipes` dataframe with information from the `raw_interactions`. A more in-depth guide about merging can be found under [this Stack Overflow post](https://stackoverflow.com/questions/53645882/pandas-merging-101).
 
 Then we replace all illegal ratings (e.g. 0) with `Nan`. This step is to prevent numerical missing data from affecting certain aggregation methods, such as when looking for average rating using `.mean()`. Since aggregation methods ignores `NaN` as default, we can safely proceed to the next step. 
 
 Next, since we are interested in finding trends for the average ratings amongst our recipes, we would like to also have a column with  `average_rating` data. We perform a left merge again, resulting in a dataframe called `recipes` with additional column that contains information about `rating`.
 
-### recipes.head()
-
 The cleaned DataFrame is displayed below (columns have been separated due to webpage formatting concerns):
-<iframe src="assets/recipes_trincated_head.html" width=600 height=600 frameBorder=0></iframe>
+<iframe src="assets/recipes_trincated_head.html" width=600 height=600 frameBorder=0 index=False></iframe>
 
 
 | name                              |     id |   minutes |   contributor_id | submitted   |
@@ -79,4 +79,7 @@ The cleaned DataFrame is displayed below (columns have been separated due to web
 | since there are already 411 re... | ['frozen broccoli cuts', 'crea... |               9 |        5 |
 | why a millionaire pound cake? ... | ['butter', 'sugar', 'eggs', 'a... |               7 |        5 |
 | ready, set, cook! special edit... | ['meatloaf mixture', 'unsmoked... |              13 |        5 |
+
+
+### Univariate Analysis
 
