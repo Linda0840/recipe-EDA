@@ -179,10 +179,9 @@ In this section, we will finally investigate the question we came up at the begi
 
 In order to investigate this question, we need to first statistically define our independent variable: `cooking time`.
 
-We used a quartiled approach and splitted our data in to four quadrants by `time` . We define our first quartile to be group of **short cooking time** and fourth quartile to be group of **long cooking time**. We chose this partitioning condition because from the previous figure on the [Bivariate Distribution](#bivariate-analysis-)
+We used a quartiled approach and splitted our data in to four quadrants by `time` . We define our first quartile to be group of **short cooking time** and fourth quartile to be group of **long cooking time**. We chose this partitioning condition because from the previous figure on the [Bivariate Distribution](#bivariate-analysis-).
 
-
-We begin by setting up our null hypothesis:
+Now, we are ready to begin by setting up our null hypothesis (no change):
 
 **The difference of average rating between q4 and q1 (q4-q1) is the same  (difference=0)**
 
