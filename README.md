@@ -134,7 +134,7 @@ We want to determine whether the missingness is:
 
 We first performed a __permutation testing__ to determine whether missingness of `rating` was __dependent__ on minutes.
 
-<iframe src="assets/Part_2_Reject_Ingredients.html" width=600 height=550 frameBorder=0></iframe>
+
 
 <iframe src="assets/Part_2_Reject_Steps.html" width=600 height=550 frameBorder=0></iframe>
 
@@ -148,6 +148,8 @@ We first attempted to visualize the difference in missingness among different
 The test result yielded a p-value of __`0.037`__, given that we use __α = 0.01__ as our significance level, we __fail to reject the null hypothesis__, which is a sign that the missingness is potentially due to random chance, hence we cannot conclude that the missingness of `rating` is dependent on `time`. 
 
 Then, we tried to investigate the realtionship between missingness in `rating` and `n_ingredients`. We also hypothesized that the missingness is dependent on `n_ingredients`, with similar reasoning mentioned above. 
+
+<iframe src="assets/Part_2_Reject_Ingredients.html" width=600 height=550 frameBorder=0></iframe>
 
 <iframe src="assets/Part_2_Ingredients.html" width=600 height=550 frameBorder=0></iframe>
 
