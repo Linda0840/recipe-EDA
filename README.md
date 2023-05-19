@@ -107,7 +107,7 @@ From the chart above, we can observe that there seems to be some correlation bet
 
 ## Interesting Aggregates
 
-<iframe src="assets/Part_1_Pivot.html" width=500 height=550 frameBorder=0 margin-bottom=0 padding- bottom=0></iframe>
+<iframe src="assets/Part_1_Pivot.html" width=600 height=600 frameBorder=0 margin-bottom=0 padding- bottom=0></iframe>
 
 
 For the pivot table above, we attempted to visualize `n_steps`  and `n_ingredients`, and aggregating their average ratings. The result does not show an obvious trend, but we can prelimanarily hypothesize that as number of steps and number of ingredients increase, the average rating for the recipe will decrease. This will not be the main focus of this EDA, but is a potential future area of interest.
