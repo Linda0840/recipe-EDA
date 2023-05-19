@@ -146,7 +146,7 @@ From the graph, we can see that there are some visible difference in the distrib
 <iframe src="assets/Part_2_Minutes.html" width=600 height=550 frameBorder=0></iframe>
 
 
-The test result yielded a p-value of __`0.037`__, given that we use __α = 0.01__ as our significance level, we __fail to reject the null hypothesis__, which is a sign that the missingness is potentially due to random chance (belong to the same population), hence we cannot conclude that the missingness of `rating` is dependent on `time`. 
+The observed test statistic is about 117.34 (difference in 'minutes' means between missing and non-missing 'rating' is 117.34 minutes). The test result yielded a p-value of __`0.037`__, given that we use __α = 0.01__ as our significance level, we __fail to reject the null hypothesis__, which is a sign that the missingness is potentially due to random chance (belong to the same population), hence we cannot conclude that the missingness of `rating` is dependent on `time`. 
 
 ## Rating Missingness by n_ingredients
 
@@ -158,7 +158,7 @@ From the graph, we can still see that there are some visible difference in the d
 
 <iframe src="assets/Part_2_Ingredients.html" width=600 height=550 frameBorder=0></iframe>
 
-The test result yielded a p-value of __`0.001`__, and given that we still use __α = 0.01__ as our significance level, we __reject the null hypothesis__, which means that the missingness in `rating`is likely to be dependent on `n_ingredients`.
+The observed test statistic is about 0.254 (difference in means of 'n_ingredients' between missing and non-missing 'rating' is 0.254 ingredients). The test result yielded a p-value of __`0.001`__, and given that we still use __α = 0.01__ as our significance level, we __reject the null hypothesis__, which means that the missingness in `rating`is likely to be dependent on `n_ingredients`.
 
 ## Rating Missingness by n_steps
 
@@ -170,7 +170,7 @@ Then we performed a permutation testing by using __difference in means__ to dete
 
 <iframe src="assets/Part_2_Steps.html" width=600 height=550 frameBorder=0></iframe>
 
-The test result yielded a p-value of __`0.00`__, and given that we still use __α = 0.01__ as our significance level, we __reject the null hypothesis__, which means that the missingness is likely to be dependent on `n_steps`.
+The observed test statistic is about 1.492 (difference in means of 'n_steps' between missing and non-missing 'rating' is 1.492 steps). The test result yielded a p-value of __`0.00`__, and given that we still use __α = 0.01__ as our significance level, we __reject the null hypothesis__, which means that the missingness is likely to be dependent on `n_steps`.
 
 
 
@@ -188,7 +188,7 @@ We used a quartiled approach and split our data in to four quadrants by `time` .
 
 Now, we are ready to begin by setting up our null hypothesis (no change):
 
-- **The difference of average rating between q1 and q4 (q1-q4) is the same  (difference = 0)**
+- **The difference of average rating between q1 and q4 (q1-q4) is 0  (difference = 0)**
 
 Then we state our alternative hypthesis:
 
