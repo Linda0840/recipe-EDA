@@ -122,9 +122,9 @@ In real-life data, missingness is something that we will always encounter. We wo
 
 **NMAR** occurs when the missingness is _dependent_ on certain unknown traits from themselves. We would have to use some domain knowledge to determine whether there is a possibility of **NMAR**. 
 
- Online environment is usually polarizing and people tend to express extreme opinions on things that they feel strongly about[(see: Group Polarization)](https://en.wikipedia.org/wiki/Group_polarization). In terms of ratings, online users might be more inclined to leave a review when they either feel like the recipe is exceptionally good (perhaps giving it as 5/5), but there will also be folks who would leave a (1/5) if the recipe does not suit their taste. 
+ Online environment is usually polarizing and people tend to express extreme opinions on things that they feel strongly about[(see: Group Polarization)](https://en.wikipedia.org/wiki/Group_polarization). In terms of ratings, online users might be more inclined to leave a review when they either feel like the recipe is exceptionally good (perhaps giving it as 5/5 stars), but there will also be folks who would leave a (1/5 stars) if the recipe does not suit their taste. 
  
- Therefore, the extremeness of the ratings themselves could be correlated with their missingness, with more missing data amongst ratings with a more moderate score (e.g. 3). 
+ Therefore, the extremeness of the ratings themselves could be correlated with their missingness, with more missing data amongst ratings with a more moderate score (e.g. 3 stars). 
 
 _(Note: more complete information about types of missingness can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK493614/))_
 
