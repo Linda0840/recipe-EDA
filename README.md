@@ -1,16 +1,16 @@
 # Chop Chop! An Analysis on food recipe preparation times and ratings
-Authors: Linda Zhang (xiz115@ucsd.edu), Kay Qu(kqu@ucsd.edu)
+Authors: Xiaoyan Zhang (xiz115@ucsd.edu), Kay Qu(kqu@ucsd.edu)
 
 # About this project
-this is a paired EDA project which is originally assigned by UCSD's DSC80 offering during SP23. 
-we will be focusing on  cleaning, exploreing, and visualizing data scraped from [food.com](food.com). 
+This is a paired EDA project which is originally assigned by UCSD's DSC80 offering during SP23. 
+we will be focusing on cleaning, exploreing, and visualizing data scraped from [food.com](food.com). 
 More information about the project's guidelines can be found [here](https://dsc80.com/project3/recipes-and-ratings/).
 
 # Part I: Introduction
 
 ## Research Question
 
-We would like to investigate the relationship between Time (in minutues) to prepare a recipe and whether it correlates with the average rating that it receives. We hypothesize that the longer time a recipe requires, the less rating it will receive. We will be implementing hypothesis testing techniques to investigate this question. 
+We would like to investigate the relationship between Time (in minutues) to prepare a recipe and whether it correlates with the average rating that the recipe receives. We hypothesize that the longer time a recipe requires, the less rating it will receive. We will be implementing hypothesis testing techniques to investigate this question. 
 
 This is a question worth investigating because through analyzing the relationship between cooking time and ratings, we can potentially look into whether this trend (or the lack thereof) is related to years when the users provided their ratings. We can then preform meta-analysis on whether users are becoming less fond of lengthy recipes as time passes. This can be a future research topic that is worth investigating. 
 
@@ -19,7 +19,7 @@ Our data is derived from [food.com](https://www.food.com), originally scraped an
 
 Below are the breif description of the raw data that we are going to perform cleaning on: 
 
-### Recipes (83782 rows, 12 columns)
+### raw_recipes (83782 rows, 12 columns)
 
 | Column           | Description                                          |
 |------------------|------------------------------------------------------|
@@ -34,7 +34,7 @@ Below are the breif description of the raw data that we are going to perform cle
 | 'steps'          | Description for 'n_steps', in order                       |
 | 'description'    | additional description provided by user                             |
 
-### Ratings (731927 rows, 5 columns)
+### raw_ratings (731927 rows, 5 columns)
 
 | Column       | Description           |
 |--------------|-----------------------|
@@ -54,7 +54,7 @@ A more in-depth guide about merging can be found under [this Stack Overflow post
 
 Then we replace all illegal ratings (e.g. 0) with `Nan`. This step is to prevent numerical missing data from affecting certain aggregation methods, such as when looking for average rating using `.mean()`. Since aggregation methods ignores `NaN` as default, we can safely proceed to the next step. 
 
-Next, since we are interested in finding trends for the average ratings amongst our recipes, we would like to also have a column with  `average_rating` data. We perform a left merge again, resulting in a dataframe called `recipes` with additional column that contains information about `rating`.
+Next, since we are interested in finding trends for the average ratings amongst our recipes, we would like to also have a column with  `average_rating` data. We perform a left merge again on `raw_recipes` with `average_rating`, resulting in a dataframe called `recipes` with additional column that contains information about `rating`.
 
 The cleaned DataFrame is displayed below (columns have been separated due to webpage formatting concerns):
 <iframe src="assets/recipes_trincated_head.html" width=600 height=600 frameBorder=0 index=False></iframe>
@@ -95,7 +95,7 @@ From the chart above, we can observe that more than 64% of the `recipes` can be 
 
 <iframe src="assets/Part_1_Histogram_of_Average_Rating.html" width=500 height=550 frameBorder=0></iframe>
 
-From the chart above, we can see that the average `ratings` of `recipes` are overall positive, with around (TBD) percent of values ranging at a solid 5/5. The rest of the `ratings` are distributed at around 3-4, and there are very few ratings that are below 2.
+From the chart above, we can see that the average `ratings` of `recipes` are overall positive, with around 64% of values ranging at a solid 5/5. The rest of the `ratings` are distributed at around 3-4, and there are very few ratings that are below 2.
 
 ## Bivariate analysis <a id="biv-analysis"></a>
 
@@ -103,11 +103,11 @@ In this section, we will be exploring the relationship between the two variables
 
 <iframe src="assets/Part_1_Scatter_Plot.html" width=500 height=550 frameBorder=0></iframe>
 
-From the chart above, we can observe that there seems to be some correlation between `minutes` and `rating`. This observation is based on the fact that we see more ratings on the lower end of the spectrum when the recipe's time in minutes is shorter. We would like to further investigate if that is truly the case. 
+From the chart above, we can observe that there seems to be some correlation between `minutes` and `rating`. This observation is based on the fact that we see more ratings on the higher end of the spectrum when the recipe's time in minutes is shorter. We would like to further investigate if that is truly the case. 
 
 ## Interesting Aggregates
 
-<iframe src="assets/Part_1_Pivot.html" width=500 height=550 frameBorder=0></iframe>
+<iframe src="assets/Part_1_Pivot.html" width=500 height=550 frameBorder=0 margin-bottom=0 ></iframe>
 
 
 For the pivot table above, we attempted to visualize `n_steps`  and `n_ingredients`, and aggregating their average ratings. The result does not show an obvious trend, but we can prelimanarily hypothesize that as number of steps and number of ingredients increase, the average rating for the recipe will decrease. This will not be the main focus of this EDA, but is a potential future area of interest.
@@ -133,7 +133,7 @@ We want to determine whether the missingness is:
 - **MCAR (Missing Completely At Random),** or
 - **MAR (Missing At Random).**,
 
-and this can be achieve by performing column dependency tests.
+and this can be achieved by performing column dependency tests.
 
 ## Missingness of minutes
 
@@ -141,7 +141,7 @@ We first performed a __permutation testing__ to determine whether missingness of
 
 <iframe src="assets/Part_2_Fail_To_Reject.html" width=600 height=550 frameBorder=0></iframe>
 
-From the graph, we can see that there are some visible difference in the distribution of minutes when comparing missing and non-missing data. We performed a permutation testing by using __difference in means__ to determine if these two groups could be from the same population: 
+From the graph, we can see that there are some visible difference in the distribution of minutes when comparing missing and non-missing data. We performed a permutation testing by using __difference in means__ as test statistic to determine if these two groups could be from the same population: 
 
 <iframe src="assets/Part_2_Minutes.html" width=600 height=550 frameBorder=0></iframe>
 
@@ -154,11 +154,11 @@ Then, we tried to investigate the realtionship between missingness in `rating` a
 
 <iframe src="assets/Part_2_Reject_Ingredients.html" width=600 height=550 frameBorder=0></iframe>
 
-From the graph, we can still see that there are some visible difference in the distribution of minutes when comparing missing and non-missing data. We performed a permutation testing  by using __difference in means__ to determine if these two groups could be from the same population: 
+From the graph, we can still see that there are some visible difference in the distribution of minutes when comparing missing and non-missing data. We performed a permutation testing  by using __difference in means__ as test statistic to determine if these two groups are from the same population: 
 
 <iframe src="assets/Part_2_Ingredients.html" width=600 height=550 frameBorder=0></iframe>
 
-The test result yielded a p-value of __`0.001`__, and given that we still use __α = 0.01__ as our significance level, we __reject the null hypothesis__, which means that the missingness is likely to be associated with `n_ingredients`.
+The test result yielded a p-value of __`0.001`__, and given that we still use __α = 0.01__ as our significance level, we __reject the null hypothesis__, which means that the missingness in `rating`is likely to be dependent on `n_ingredients`.
 
 ## Missingness of n_steps
 
@@ -170,7 +170,7 @@ Then we performed a permutation testing by using __difference in means__ to dete
 
 <iframe src="assets/Part_2_Steps.html" width=600 height=550 frameBorder=0></iframe>
 
-The test result yielded a p-value of __`0.00`__, and given that we still use __α = 0.01__ as our significance level, we __reject the null hypothesis__, which means that the missingness is likely to be associated with `n_steps`.
+The test result yielded a p-value of __`0.00`__, and given that we still use __α = 0.01__ as our significance level, we __reject the null hypothesis__, which means that the missingness is likely to be dependent on `n_steps`.
 
 
 
