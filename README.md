@@ -216,3 +216,14 @@ The best way to answer this question is still by performing a permutation testin
 The test result yielded a p-value of __`0.00`__, and given that we still use __α = 0.01__ as our significance level, we __reject the null hypothesis__, which means that recipes with lower cooking time could be **more likely** to have a higher rating compared to those with longer cooking time. 
 
 However, it is important to note that we **cannot guarantee** for sure that our conclusion is correct, since we are performing a hypothesis testing. We can only conclude that it is **likely** that the recipes with lower cooking time have higher ratings.
+
+
+# Part V: Conclusion
+
+Overall, the project was straightforward but quite challenging. During the EDA process, we realized that there are a lot more HTML skills to be acquired in order to produce high-quality webpages. In the future, we could focus on few major aspects: 
+
+- 1. Explore more advanced plotting techniques.
+
+- 2. Wrangle more real-life data since they are way more chaotic.
+
+- 3. Learn about more advanced data analysis tools and algorithms.
