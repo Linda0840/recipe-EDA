@@ -57,7 +57,7 @@ Then we replace all illegal ratings (e.g. 0) with `Nan`. This step is to prevent
 Next, since we are interested in finding trends for the average ratings amongst our recipes, we would like to also have a column with  `average_rating` data. We perform a left merge again on `raw_recipes` with `average_rating`, resulting in a dataframe called `recipes` with additional column that contains information about `rating`.
 
 The cleaned DataFrame is displayed below (columns have been separated due to webpage formatting concerns):
-<iframe src="assets/recipes_trincated_head.html" width=600 height=600 frameBorder=0 index=False></iframe>
+
 
 
 | name                              |     id |   minutes |   contributor_id | submitted   |
