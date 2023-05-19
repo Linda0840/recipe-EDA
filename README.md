@@ -1,4 +1,4 @@
-# Chop Chop! An Analysis on food recipe preparation times and ratings
+# Chop Chop! An Analysis on Recipe Preparation Times and Ratings
 Authors: Xiaoyan Zhang (xiz115@ucsd.edu), Kay Qu(kqu@ucsd.edu)
 
 # About this project
@@ -10,7 +10,7 @@ More information about the project's guidelines can be found [here](https://dsc8
 
 ## Research Question
 
-We would like to investigate the relationship between Time (in minutues) to prepare a recipe and whether it correlates with the average rating that the recipe receives. We hypothesize that the longer time a recipe requires, the less rating it will receive. We will be implementing hypothesis testing techniques to investigate this question. 
+We would like to investigate **the relationship between Time (in minutues) to prepare a recipe and whether it correlates with the average rating that the recipe receives.** We hypothesize that the longer time a recipe requires, the less rating it will receive. We will be implementing hypothesis testing techniques to investigate this question. 
 
 This is a question worth investigating because through analyzing the relationship between cooking time and ratings, we can potentially look into whether this trend (or the lack thereof) is related to years when the users provided their ratings. We can then preform meta-analysis on whether users are becoming less fond of lengthy recipes as time passes. This can be a future research topic that is worth investigating. 
 
