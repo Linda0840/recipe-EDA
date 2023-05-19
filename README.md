@@ -118,7 +118,7 @@ For the pivot table above, we attempted to visualize `n_steps`  and `n_ingredien
 
 ### Why NMAR?
 
-In real-life data, missingness is something that we will always encounter. We would like to investigate if there is a relationship between `rating` and `time`, in minutes. Through cleaning and examining data, we obsereved a few columns with missing values, such as `rating`, `review`, `description`. One potential column where missingness of type NMAR could occur is in the `rating` column. 
+In real-life data, missingness is something that we will always encounter. We would like to investigate if there is a relationship between `rating` and `time`, in minutes. Through cleaning and examining data, we obsereved a few columns with missing values, such as `rating`, `review`, `description`. One potential column where missingness of type **NMAR** could occur is in the `rating` column. 
 
 **NMAR** occurs when the missingness is _dependent_ on certain unknown traits from themselves. We would have to use some domain knowledge to determine whether there is a possibility of **NMAR**. 
 
@@ -131,8 +131,9 @@ _(Note: more complete information about types of missingness can be found [here]
 ### Could It Be Other Missingness?
 
 However, we can test for MAR for the column we've selected as well. While **NMAR** can only be deduced by reasoning, we can determine whether a column's data is either:
-- **MCAR (Missing Completely at Random)**, or
--**MAR (Missing at Random)**.
+- _**MCAR (Missing Completely at Random)**_, or
+
+- _**MAR (Missing at Random)**_.
 
 For example, while we cannot prove or disprove that the column `rating` has some inherent underlying information that affects its missingness, we can test its dependencies with other columns. 
 
