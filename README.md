@@ -107,7 +107,7 @@ From the chart above, we can observe that there seems to be some correlation bet
 
 ## Interesting Aggregates
 
-<iframe src="assets/Part_1_Pivot.html" width=500 height=550 frameBorder=0 margin-bottom=0 ></iframe>
+<iframe src="assets/Part_1_Pivot.html" width=500 height=550 frameBorder=0 margin-bottom=0 padding- bottom=0></iframe>
 
 
 For the pivot table above, we attempted to visualize `n_steps`  and `n_ingredients`, and aggregating their average ratings. The result does not show an obvious trend, but we can prelimanarily hypothesize that as number of steps and number of ingredients increase, the average rating for the recipe will decrease. This will not be the main focus of this EDA, but is a potential future area of interest.
@@ -184,7 +184,7 @@ In this section, we will finally investigate the question we came up at the begi
 
 In order to investigate this question, we need to first statistically define our independent variable: `cooking time`.
 
-We used a quartiled approach and splitted our data in to four quadrants by `time` . We define our first quartile to be group of **short cooking time** and fourth quartile to be group of **long cooking time**. We chose this partitioning condition because from the previous figure on the [Bivariate Distribution](#bivariate-analysis-).
+We used a quartiled approach and split our data in to four quadrants by `time` . We define our first quartile to be group of **short cooking time** and fourth quartile to be group of **long cooking time**. We chose this partitioning condition because from the previous figure on the [Bivariate Distribution](#bivariate-analysis-), a large portion of scatter points are clustered in the left-up corner of the plot with relatively short cooking time yet high rating scores.
 
 Now, we are ready to begin by setting up our null hypothesis (no change):
 
@@ -196,7 +196,7 @@ Then we state our alternative hypthesis:
 
 ## Performing the Test
 
-The best way to answer this question, is still by performing a permutation testing. We will be using **signed difference in means of averages** as test statistic. We use **signed** difference since our question of interest is one-sided （whether observed is larger than expected, so we need statistics that inform directions. 
+The best way to answer this question is still by performing a permutation testing to determine if q1 and q4 come from the same population. We will be using **signed difference in means of averages** as test statistic. We use **signed** difference since our question of interest is one-sided (whether observed is larger than expected, so we need statistics that inform the direction). 
 
 <iframe src="assets/Part_3.html" width=600 height=550 frameBorder=0></iframe>
 
