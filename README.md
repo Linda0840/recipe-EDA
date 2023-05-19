@@ -222,8 +222,8 @@ However, it is important to note that we **cannot guarantee** for sure that our 
 
 Overall, the project was straightforward but quite challenging. During the EDA process, we realized that there are a lot more HTML skills to be acquired in order to produce high-quality webpages. In the future, we could focus on few major aspects: 
 
-- 1. Explore more advanced plotting techniques.
+- Explore more advanced plotting techniques.
 
-- 2. Wrangle more real-life data since they are way more chaotic.
+- Wrangle more real-life data since they are way more chaotic.
 
-- 3. Learn about more advanced data analysis tools and algorithms.
+- Learn about more advanced data analysis tools and algorithms.
