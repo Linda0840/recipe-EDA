@@ -208,7 +208,7 @@ Then we state our alternative hypthesis:
 
 ## Performing the Test
 
-The best way to answer this question is still by performing a permutation testing to determine if q1 and q4 come from the same population. We will be using **signed difference in means of averages** as test statistic. We use **signed** difference since our question of interest is one-sided (whether observed is larger than expected, so we need statistics that inform the direction). 
+The best way to answer this question is still by performing a permutation testing to determine if q1 and q4 come from the same population. We will be using **signed difference in means of averages** as test statistic. We use **signed difference** since our question of interest is one-sided (whether observed is larger than expected, so we need statistics that inform the direction). 
 
 <iframe src="assets/Part_3.html" width=600 height=550 frameBorder=0></iframe>
 
