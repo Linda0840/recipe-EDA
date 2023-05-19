@@ -137,7 +137,7 @@ However, we can test for MAR for the column we've selected as well. While **NMAR
 
 For example, while we cannot prove or disprove that the column `rating` has some inherent underlying information that affects its missingness, we can test its dependencies with other columns. 
 
-If we are able to discover a dependent relationship between `rating` and other columns present in the dataset, we can then argue that our column is **MAR**.
+If we are able to discover a dependent relationship between `rating` and other columns present in the dataset (e.g. `minutes`, `n_ingredients`), we can then argue that our column is **MAR**. In fact, we will be performing dependency tests in the next section.
 
 ## Missingness Dependency
 
