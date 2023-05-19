@@ -139,7 +139,7 @@ and this can be achieved by performing column dependency tests.
 
 We first performed a __permutation testing__ to determine whether missingness of `rating` was __dependent__ on minutes.
 
-<iframe src="assets/Part_2_Fail_To_Reject.html" width=600 height=550 frameBorder=0></iframe>
+<iframe src="assets/Part_2_Fail_To_Reject.html" width=600 height=500 frameBorder=0></iframe>
 
 From the graph, we can see that there are some visible difference in the distribution of minutes when comparing missing and non-missing data. We performed a permutation testing by using __difference in means__ as test statistic to determine if these two groups could be from the same population: 
 
